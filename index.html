@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 5</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form>
+        <h1>Cadastro De Usuário</h1>
+      <label for="Nome">Nome</label>
+      <input type="text" id="Nome" placeholder="Digite seu nome" />
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Digite seu email"/>
+      <label for="Escolaridade">Escolaridade</label>
+      <select id="Escolaridade">
+        <option disabled selected>Selecione</option>
+        <option>Ensino Fundamental</option>
+        <option>Ensino Médio</option>
+        <option>Superior Imcompleto</option>
+        <option>Superior Completo</option>
+        <option>Mestrado</option>
+        <option>Doutorado</option>
+        <option>Sem Escolaridade</option>
+      </select>
+      <label for="estado">Estado</label>
+      <input type="text" id="estado" list="lista-estado" placeholder="Selecione seu estado"/>
+      <datalist id="lista-estado">
+        <option>Acre</option>
+        <option>Bahia</option>
+        <option>Ceará</option>
+        <option>Maranhão</option>
+        <option>Pernambuco</option>
+        <option>Rio de Janeiro</option>
+        <option>Minas Gerais</option>
+        <option>São Paulo</option>
+      </datalist>
+      <button type="reset">Limpar formulário</button>
+      <button type="submit">Salvar</button>
+    </form>
+  </body>
+</html>
